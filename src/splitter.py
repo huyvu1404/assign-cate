@@ -183,7 +183,7 @@ class Splitter:
         if hospital_column_mapping:
             df = df.rename(columns=hospital_column_mapping)
 
-        columns = ["STT", "Title", "Content", "UrlComment", "UrlTopic", "Channel", "System", "PublishedDate", "Alert", "Time", "Type", "Likes", "Shares", "Comments"]
+        columns = ["STT", "Title", "Content", "UrlComment", "UrlTopic", "Channel", "System", "PublishedDate", "Alert Time", "Type", "Likes", "Shares", "Comments"]
         
         def format_hospital_excel(df, columns, writer, sheet_name, sentiment=None):
             if len(df) > 0:
