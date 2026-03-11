@@ -1,0 +1,7 @@
+services:
+  cater-splitter:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "${PORT}:${STREAMLIT_PORT}"
